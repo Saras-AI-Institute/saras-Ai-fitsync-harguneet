@@ -44,9 +44,9 @@ time_range = st.sidebar.selectbox(
 
 # Filter the data based on the selected time range
 if time_range == "Last 7 Days":
-    filtered_df = df.sort_values(by='date', ascending=False).head(7)
+    filtered_df = df.sort_values(by='Date', ascending=False).head(7)
 elif time_range == "Last 30 Days":
-    filtered_df = df.sort_values(by='date', ascending=False).head(30)
+    filtered_df = df.sort_values(by='Date', ascending=False).head(30)
 else:
     filtered_df = df
 
